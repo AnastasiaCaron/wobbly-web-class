@@ -2,5 +2,8 @@ body{
   background-color:gray;
   color:white;
   text-align:center;
-  font-size:100px;
+}
+.big-boy{
+  text-align:center;
+  font-size:50px;
 }

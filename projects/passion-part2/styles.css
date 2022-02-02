@@ -1,0 +1,30 @@
+img{
+  max-width:100%;
+}
+
+body{
+  background-color:darkgrey;
+  color:maroon;
+  margin-left:30px;
+  text-align:center;
+  border: 50px dotted maroon;
+  padding:20px;
+  margin: 30px;
+}
+
+.header{
+  color:crimson;
+  font-size:25px;
+}
+.special{
+  color:white;
+  font-style:underlined;
+  font-size:50px;
+}
+ol{
+  list-style-type:circle;
+  text-align:center;
+}
+p{
+  text-align:left;
+}

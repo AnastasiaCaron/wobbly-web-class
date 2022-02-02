@@ -1,0 +1,36 @@
+h1{
+  color:lightskyblue;
+  background:black;
+  border:4px dashed lightskyblue;
+  padding:40px;
+  padding-left:600px;
+  margin:50px;
+}
+body{
+  background-color:maroon;
+  color:white;
+
+  border-width: 6px;
+  border-style: dotted;
+  border-color: white;
+
+  border:50px dotted lemonchiffon;
+  margin:0px;
+}
+
+h2{
+  color:lemonchiffon;
+  font-size: 60px;
+  margin-bottom:0;
+  margin-left:20px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.sp {
+  background:darkgrey;
+  font-size:100px;
+  margin-left:70px;
+}
