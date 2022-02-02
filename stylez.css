@@ -6,4 +6,8 @@ body{
 .big-boy{
   text-align:center;
   font-size:50px;
+  border-left: 70px dotted black;
+  border-right: 70px dotted black;
+  margin-left:250px;
+  margin-right:250px;
 }
