@@ -1,0 +1,28 @@
+body{
+  background-color:maroon;
+  color:red;
+  font-family:"impact", "arial", serif;
+    /* the serif is defualt if they don't have the typeface downloaded, can add as many defualts as want */
+  font-family:"arvo", serif;
+  font-style:bold;
+}
+.boxy{
+  /* cus its to demonstrate the box model! get it? I'm very funny */
+  background:coral;
+  color:saddlebrown;
+  border:10px solid indianred;
+
+  margin:30px 70px;
+  /* makes the top & bottom margin 30; and left and right 70! */
+  padding:100px 30px 5px 130px;
+  /* top right bottom left */
+
+  max-width:300px;
+  height:400px;
+}
+
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}

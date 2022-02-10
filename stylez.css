@@ -8,6 +8,5 @@ body{
   font-size:50px;
   border-left: 70px dotted black;
   border-right: 70px dotted black;
-  margin-left:250px;
-  margin-right:250px;
-}
+  margin:50px;
+  list-style-position:inside;

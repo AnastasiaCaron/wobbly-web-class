@@ -1,0 +1,27 @@
+img{
+  max-width:100%;
+}
+body{
+  background-color: honeydew;
+  color:seagreen;
+  border:10px dashed indianred;
+  padding:20px 50px;
+  font-family:'arial',serif;
+
+}
+.fansy{
+  color:darksalmon;
+  text-align:center;
+  font-style:bold;
+  border: 5px dashed darksalmon;
+  box-sizing:border-box;
+  padding:20px;
+  margin:20px 200px;
+}
+.subhead{
+  color:darksalmon;
+  border:5px dashed salmon;
+  font-style:italic;
+  margin-right:900px;
+  padding-left:150px;
+}

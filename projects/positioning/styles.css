@@ -1,0 +1,80 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  font-family:"arial", serif;
+  background-color:cornsilk;
+}
+
+/* centering horzontally - easy; verical =hard */
+.static{
+    /* static postion = redundant; what it already does */
+  position:static;
+  background:rgb(57, 9, 13);
+  color:tomato;
+  height:300px;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  right:20px;
+  z-index:20;
+  /* staic isn't affected by top bottom right left */
+}
+.relative{
+  /* based on statics' positons??? */
+  /* and margin makes things complicated */
+  position:relative;
+  background:lightgreen;
+  color:darkslategray;
+  width:300px;
+  height:300px;
+  top:50px;
+  bottom:50px;
+  left:50px;
+  right:20px;
+  z-index:-1;
+}
+
+.absolute{
+  position:absolute;
+  background:tomato;
+  color:midnightblue;
+  width:200px;
+  height:300px;
+  top:100px;
+  bottom:100px;
+  left:100px;
+  right:500px;
+}
+
+.fixed{
+  position:fixed;
+  background:grey;
+  width:300px;
+  height:300px;
+  right:50px;
+  bottom:40px;
+  z-index:10;
+}
+.sticky{
+  /* doesn't work wt internet explorer, and wonk wt safari */
+  position:sticky;
+  position: -webkit-sticky; /*so it works in older safari ! */
+  background:khaki;
+  color:olive;
+  width:300px;
+  height:300px;
+  top:50px;
+  left:80px;
+  right:0;
+  z-index:1;
+  /* ordering system for this css sheet*/
+
+  margin:0 auto; /*horzontal center align, janky fix*/
+  /* 0 top and bottom, auto hoizontal */
+
+  border-radius:50%;
+  /* make your box element into a circle, oval if it wasn't a box to begin with!! */
+}
