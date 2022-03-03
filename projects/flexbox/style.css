@@ -1,0 +1,97 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+.block{
+  background-color: maroon;
+  color:tomato;
+  display:block;
+  /* defualt of a div element */
+  display:inline;
+  padding:30px;
+}
+span{
+  background:rgb(113, 229, 231);
+  color:rgb(91, 72, 0);
+  padding:30px;
+}
+.flexybox-container{
+background:rgb(125, 191, 105);
+padding: 30px;
+display:flex;
+height:600px;
+
+flex-direction:row;
+flex-wrap:wrap;
+/* or write */
+/* flex-flow: row wrap; */
+
+justify-content: flex-start;
+/* vertical alignment for row, horizontal for column */
+align-items:center;
+/* horizontal alignment for row, vertical for column */
+align-content:center;
+/* for multiple lines */
+gap:50px 70px;
+/* better margins */
+
+}
+.item{
+  background-color:rgb(193, 255, 175);
+  padding:10px;
+  width:200px;
+
+}
+.main-container{
+  background:rgb(224, 245, 206);
+  width:100%;
+  height:100vh;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+
+}
+.red-box-container{
+/* background:rgb(255, 108, 148); */
+height:20%;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+gap:10px;
+}
+.red-box{
+  background:rgb(233, 22, 74);
+  width:100%
+}
+.bottom-row{
+  /* background:rgb(168, 174, 199); */
+  height:80%;
+  display:flex;
+  gap:10px;
+}
+.big-grey-container{
+  background:rgb(115, 124, 113);
+  width:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.little-yellow{
+  background:rgb(240, 220, 90);
+  width:20%;
+  height:20%;
+}
+.green-column-container{
+/* background:rgb(186, 235, 143); */
+width:50%;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+.green-rows{
+  background:rgb(77, 212, 95);
+  height:100%;
+}

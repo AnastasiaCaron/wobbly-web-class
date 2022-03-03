@@ -1,0 +1,118 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  width:100vw;
+  height:100vh;
+  background-color:rgb(8, 0, 34);
+  margin:0;
+  animation:secret 4s 8s 5 alternate cubic-bezier(0.56, 0.01, 0.37, 0.79);
+}
+
+.gear-box-container{
+  width:100vw;
+  height:100vh;
+  padding:5px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:5vw;
+}
+.gear1{
+  width:3vw;
+  height:3vw;
+  background:rgb(228, 76, 152);
+  animation:spin1 4s infinite cubic-bezier(0.56, 0.01, 0.37, 0.79);
+}
+.gear2{
+  width:5vw;
+  height:5vw;
+  background:rgb(184, 125, 215);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  animation:spin2 4s infinite cubic-bezier(0.56, 0.01, 0.37, 0.79);
+}
+.gear3{
+  width:15vw;
+  height:15vw;
+  background:rgb(164, 72, 249);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  animation:spin3 4s infinite cubic-bezier(0.56, 0.01, 0.37, 0.79);
+}
+.gear4{
+  width:20vw;
+  height:20vw;
+  background:rgb(99, 199, 221);
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  gap:3vw;
+  animation: breathe 4s infinite cubic-bezier(0.56, 0.01, 0.37, 0.79);
+}
+@keyframes spin1{
+  0%{
+    transform:rotate(180deg);
+  }
+  50%{
+    transform:rotate(0deg);
+    background:rgb(184, 125, 215);
+  }
+  100%{
+    transform:rotate(270deg);
+  }
+}
+@keyframes spin2{
+  0%{
+    transform:rotate(-270deg);
+  }
+  50%{
+    transform:rotate(0deg);
+    background:rgb(228, 76, 152);
+  }
+  100%{
+    transform:rotate(-180deg);
+  }
+}
+@keyframes spin3{
+  0%{
+    transform:rotate(180deg);
+  }
+  50%{
+    transform:rotate(0deg);
+    background:rgb(99, 199, 221);
+  }
+  100%{
+    transform:rotate(270deg);
+  }
+}
+@keyframes breathe{
+  0%{
+    transform:scale(80%);
+  }
+  50%{
+    transform:scale(110%);
+    background:rgb(164, 72, 249);
+  }
+  100%{
+    transform:scale(80%);
+  }
+}
+@keyframes secret{
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(100vh);
+  }
+  100%{
+      transform:translateY(0);
+  }
+}

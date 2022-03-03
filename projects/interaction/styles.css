@@ -1,0 +1,73 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  background:rgb(186, 213, 188);
+  margin:0;
+}
+body{
+  font-size:25px;
+}
+img{
+  max-width:500px;
+  max-height:500px;
+}
+.object{
+  background:rgb(240, 113, 110);
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+
+  transition:
+    background .5s,
+    transform .5s cubic-bezier(1, 0.47, 0.46, 1.54),
+    border-radius .5s cubic-bezier(1, 0.47, 0.46, 1.54);
+  cursor: pointer;
+}
+.object:hover{
+  /* override object's rules when mouse hovers over object */
+  background:rgb(251, 194, 45);
+  transform:scale(2);
+  border-radius: 0;
+}
+.special{
+color:rgb(168, 129, 27);
+}
+.special:hover{
+  color:rgb(240, 113, 110);
+  cursor:pointer;
+}
+.hidden{
+position:absolute;
+bottom:10px;
+left:10px;
+opacity:0;
+transition: opacity .5s;
+}
+.congrat{
+  top:10px;
+  right:10px;
+  bottom:auto;
+  left:auto;
+  color:rgb(168, 129, 27);
+}
+.special:hover + .hidden{
+  opacity:1;
+  cursor: pointer;
+  /* + only works when img in <p> with <span>, and is right after <span> */
+}
+.intresting li:nth-of-type(1){
+  color:red;
+}
+.intresting li:nth-of-type(2){
+  color:rgb(203, 25, 84);
+/* Space - look for things with smae tag, lok at 3 schools */
+}
+.intresting li:nth-of-type(3){
+  color:rgb(129, 8, 87);
+}

@@ -1,0 +1,249 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  margin:0;
+  padding:0;
+}
+.blank-page{
+  background:rgb(23, 0, 93);
+  height:100vh;
+  width:100%;
+}
+.top-sky{
+  background:rgb(255, 166, 188);
+  height:33%;
+}
+.middle-sky{
+  background:rgb(255, 89, 137);
+  height:34%;
+}
+.bottom-sky{
+  background:rgb(212, 70, 147);
+  height:33%
+}
+.close-ground-container{
+/* background:rgb(129, 249, 209); */
+height:100vh;
+width:100%;
+display:flex;
+align-content: flex-end;
+justify-content: flex-end;
+align-items:flex-end;
+position:absolute;
+flex-direction: column;
+gap:5px;
+}
+.close-grass{
+  background:rgb(16, 117, 106);
+  height:200px;
+  width:800px;
+}
+.close-rock{
+background:rgb(60, 33, 3);
+height:50px;
+width:800px;
+}
+.close-stump-container{
+  height:100vh;
+  width:50%;
+  position:absolute;
+  top:-259px;
+  right:100px;
+  display:flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+.close-tree-stump{
+  background:rgb(60, 33, 3);
+  width:80px;
+  height:250px;
+}
+.close-leaves-container1{
+height:50%;
+width:150px;
+position:absolute;
+top:40px;
+left:1300px;
+display:flex;
+flex-direction: column;
+flex-wrap:wrap;
+align-content: stretch;
+justify-content: space-between;
+align-items:center;
+gap:5px;
+}
+.close-leaves-container2{
+height:300px;
+width:500px;
+position:absolute;
+top:50px;
+right:10px;
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+align-content: flex-start;
+justify-content: space-evenly;
+align-items:center;
+gap:5px;
+}
+.close-leaves-container3{
+height:400px;
+width:400px;
+position:absolute;
+top:200px;
+right:500px;
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+align-content: center;
+justify-content: space-evenly;
+align-items:center;
+gap:5px;
+}
+.leaf1 {
+  height:100px;
+  width:100px;
+  background:rgb(16, 117, 106);
+}
+.close-leaves-container3{
+height:100px;
+width:200px;
+position:absolute;
+top:200px;
+right:300px;
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+align-content: flex-start;
+justify-content: space-evenly;
+align-items:center;
+gap:5px;
+}
+.far-grass-container1{
+  position:absolute;
+  z-index:10;
+  width:150px;
+  height:100px;
+  top:75px;
+  left:50px;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:5px;
+}
+.leaf2{
+  background:rgb(16, 117, 106);
+  height:40px;
+  width:40px;
+}
+.far-grass-container2{
+  position:absolute;
+  z-index:10;
+  width:200px;
+  height:150px;
+  top:140px;
+  left:20px;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:5px;
+}
+.far-grass-container3{
+  position:absolute;
+  z-index:10;
+  width:100px;
+  height:100px;
+  top:46px;
+  left:165px;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:5px;
+}
+.far-stump-container{
+  position:absolute;
+  left:100px;
+  top:225px;
+  width:100px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+}
+.far-stump{
+  background:rgb(60, 33, 3);
+  height:70px;
+  width:40px;
+}
+.far-ground-container{
+  left:100px;
+  top:300px;
+  height:400px;
+  width:50%;
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  gap:5px;
+}
+.far-grass{
+  background:rgb(16, 117, 106);
+  height:100px;
+  width:300px;
+}
+.far-big-rock-container{
+top:105px;
+height:55px;
+width:300px;
+position:absolute;
+display:flex;
+flex-direction:row;
+}
+.far-rock2{
+  height:50px;
+  width:150px;
+  background:rgb(60, 33, 3);
+}
+.little-rock-container1{
+  position:absolute;
+  height:200px;
+  width:300px;
+  top:150px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  align-items:center;
+  gap:5px;
+}
+.far-rock1{
+  background:rgb(60, 33, 3);
+  height:50px;
+  width:50px;
+}
+.little-rock-container2{
+  position:absolute;
+  height:300px;
+  width:300px;
+  top:105px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items:center;
+  gap:5px;
+}
+.far-rock3{
+  background:rgb(60, 33, 3);
+  height:40px;
+  width:60px;
+}

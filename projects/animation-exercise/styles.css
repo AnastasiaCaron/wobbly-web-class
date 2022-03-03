@@ -1,0 +1,85 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  margin:0;
+  background:rgb(44, 38, 93);
+}
+.flex-contain{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.circle{
+width:15vw;
+height:15vw;
+/* vh for both so same length, cus veiw port is a vey landsape rectangle, and not specific px lenth so view wel on diff size windows */
+background:rgb(223, 167, 255);
+/* border-radius:50%; */
+animation: pulse 1s infinite alternate,spin 2s infinite;
+}
+.square2{
+background:rgb(185, 48, 103);
+width:15vw;
+height:15vw;
+animation: spin 1s infinite alternate;
+}
+.square{
+background:rgb(185, 48, 103);
+width:20vw;
+height:20vw;
+animation: spin 1.5s infinite linear;
+}
+.zoomer{
+  background:rgb(223, 167, 255);
+  width:10vw;
+  height:5vh;
+  position:fixed;
+  bottom:0;
+  left:0;
+  animation: zoom 1s infinite cubic-bezier(0.96, 0.19, 0.74, 0.68);
+}
+
+
+/* @keyframes pulse {
+  0% {
+    background:rgb(223, 167, 255);
+  }
+  50% {
+    background:rgb(185, 48, 103);
+  }
+  100% {
+    background:rgb(223, 167, 255);
+  }
+} or wit alternate in oroginal animation line*/
+@keyframes pulse {
+  0% {
+    background:rgb(223, 167, 255);
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    background:rgb(185, 48, 103);
+    opacity:100%;
+  }
+}
+@keyframes spin{
+  0%{
+  transform:rotate(0deg) scale(1);
+  }
+  100%{
+    transform:rotate(270deg) scale(1.3);
+  }
+}
+@keyframes zoom{
+  0%{
+    transform:translateX(-10vw);
+  }
+  100%{
+    transform:translateX(110vw);
+  }
+}
