@@ -1,0 +1,151 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  padding:0;
+  margin:0;
+}
+.page-container{
+background:rgb(221, 177, 117);
+margin:0;
+width:100%;
+height:100vh;
+position:absolute;
+display:flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-direction:column;
+gap:10px;
+}
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:50px;
+  background:rgb(110, 221, 172);
+  color:rgb(60, 42, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity:0;
+  transition: 1s cubic-bezier(0.77, 0, 0.83, 1.19);
+}
+.click-me-spread{
+  position:relative;
+  bottom:0;
+  width:100%;
+  height:150px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  opacity:0;
+  transition: 3s cubic-bezier(0.77, 0, 0.83, 1.19);
+}
+.click-me{
+  background:rgb(110, 221, 172);
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border:dashed;
+  border-color:rgb(39, 184, 146);
+  color:rgb(60, 42, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: 2s cubic-bezier(0.77, 0, 0.83, 1.19);
+}
+.sky{
+  width:100%;
+  transition: 2s cubic-bezier(0.77, 0, 0.83, 1.19);
+  position:absolute;
+  top:50px;
+  left:0;
+  opacity:0;
+  pointer-events: none;
+}
+.intro-button{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background:rgb(110, 221, 172);
+  border:dashed;
+  border-color:rgb(39, 184, 146);
+  color:rgb(60, 42, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color:rgb(0, 57, 60);
+  opacity:1;
+  transition: 1s cubic-bezier(0.77, 0, 0.83, 1.19);
+}
+.header2{
+  position:absolute;
+  bottom:300px;
+  width:100%;
+  height:50px;
+  background:rgb(110, 221, 172);
+  color:rgb(60, 42, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity:0;
+  transition: 4s cubic-bezier(0.77, 0, 0.83, 1.19);
+}
+.button3{
+  position:relative;
+  top:200px;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background:rgb(110, 221, 172);
+  border:dashed;
+  border-color:rgb(39, 184, 146);
+  color:rgb(60, 42, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color:rgb(0, 57, 60);
+  opacity:0;
+  transition: 7s cubic-bezier(0.77, 0, 0.83, 1.19);
+}
+.desert{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  transition: 2s cubic-bezier(0.77, 0, 0.83, 1.19);
+  position:absolute;
+  opacity:0;
+  pointer-events: none;
+}
+.help{
+  position:fixed;
+  bottom:0;
+  right:0;
+  width:150px;
+  height:50px;
+  border-radius: 40%;
+  background:rgb(39, 184, 146);
+  color:rgb(32, 0, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.hide{
+  display:none;
+}
+.active{
+  opacity:1;
+}

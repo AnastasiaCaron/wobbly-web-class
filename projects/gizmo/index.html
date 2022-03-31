@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title> Gizmo Project, the javascript interaction project, The Desert Converastion </title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- so page looks better on phones n stuff, doesn't fix everything tho -->
+</head>
+
+<body>
+  <div class="page-container">
+    <p class="help"> Reload to Restart</p>
+
+    <div id="title" class="header">
+      Welcome to the Desert
+    </div>
+    <div class="click-me-spread" id="clickity" onclick="add()">
+      <p class="click-me"> sooo....</p>
+      <p class="click-me">what's</p>
+      <p class="click-me">that</p>
+      <p class="click-me">mean?</p>
+    </div>
+    <div id="intro" onclick="toggle()" class="intro-button">
+      <p>sup?</p>
+    </div>
+    <img src="sky.png" alt="painted clouds" class="sky" id="sky"></img>
+    <div class="header2" id="header2">
+      A Website Void to Ponder
+    </div>
+    <div id="3rd" class="button3" onclick="toggleDiv()">
+      <p>ah</p>
+    </div>
+    <img src="desert.png" alt="painted dessert dunes" class="desert" id="desert"></img>
+  </div>
+
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+  <script src="functions.js"></script>
+</body>
+
+</html>

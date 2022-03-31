@@ -1,0 +1,68 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  background:rgb(254, 193, 208);
+}
+
+.button-esk {
+  background:rgb(184, 72, 141);
+  border-radius: 50%;
+  border:none;
+  cursor:pointer;
+  padding:10px;
+  color:white;
+  left:0;
+  width:200px;
+  height:200px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+button:hover{
+  background:rgb(230, 99, 160);
+  color:black;
+}
+div:hover{
+  background:rgb(230, 99, 160);
+  color:black;
+}
+.sidebar:hover{
+  background:black;
+  color:black;
+}
+.sidebar{
+  background:rgb(113, 66, 88);
+  position:fixed;
+  top:0;
+  right:-100px;
+  height:300px;
+  width:100px;
+  color:white;
+  padding:20px;
+  transition: right .5s cubic-bezier(0.66, 0.18, 0, 1.26);
+}
+.active {
+  right:0;
+}
+.marquee-organizer1{
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+}
+.marquee-organizer2{
+  position:fixed;
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+  bottom:0;
+  right:0;
+}
+.marquee {
+  width: 25vw; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  background: rgb(240, 146, 160);
+}

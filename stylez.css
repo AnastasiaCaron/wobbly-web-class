@@ -10,3 +10,7 @@ body{
   border-right: 70px dotted black;
   margin:50px;
   list-style-position:inside;
+}
+.shift{
+  transition: .5
+}

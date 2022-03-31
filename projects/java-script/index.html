@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title> Java Script Intro Workshop </title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- so page looks better on phones n stuff, doesn't fix everything tho -->
+</head>
+
+<body>
+<div class="marquee-organizer1">
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!! if u hover i stop</div>
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!!</div>
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!!</div>
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!! if u hover i stop</div>
+</div>
+  <!-- first we set up the button that is triggering our javascript -->
+<!-- note that the element doesn't need to be a <button> to work -->
+<button onclick="toggle()" class="button-esk">Click me...</button>
+
+<!-- the box that we will be altering with our javascript -->
+<p id="box" class="sidebar">
+  the BOX
+</p>
+
+<div id="draggable"class="button-esk">
+  <p>I can be dragged around</p>
+</div>
+<div class="marquee-organizer2">
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!! if u hover i stop</div>
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!!</div>
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!!</div>
+  <div class='marquee'>Look!! I can do JAVA ScRiPt thing-a-ma-bobters!! if u hover i stop</div>
+</div>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<script src="jquery.marquee.min.js"></script>
+<script src="functions.js"></script>
+
+<script> //or import javascript directly//
+// function toggle() {
+//   var box = document.getElementById("box");
+//   box.classList.toggle("active");
+// }
+</script>
+
+</body>
+
+</html>

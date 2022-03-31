@@ -1,0 +1,96 @@
+*{
+  /* applies to every element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  background:rgb(80, 52, 69);
+}
+.gaps-baby{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.desktop-box{
+  background:rgb(255, 180, 201);
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:rgb(57, 0, 38);
+  border-radius:10px;
+  padding:5px;
+}
+
+.checkers{
+  display:flex;
+}
+.box{
+  height:100px;
+  width:100%;
+  border-radius:10px;
+}
+.light{
+background:rgb(238, 212, 222);
+}
+.dark{
+background:rgb(144, 79, 104);
+}
+.oval-times{
+  background:rgb(205, 105, 136);
+  width:100%;
+  height:200px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:5px;
+  transition: border-radius 1s;
+}
+.disclaimer{
+  background:rgb(119, 11, 96);
+  color:rgb(244, 196, 228);
+  border-radius:10px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:5px;
+
+}
+@media screen and (max-width:900px){
+  /* omg, when resize to 900px, changes properties in here!!! */
+  /* also called a media quary --sets up a "break point" */
+  body{
+    background-color:rgb(94, 201, 146);
+  }
+  .oval-times{
+    background:rgb(29, 122, 93);
+    border-radius:10px;
+  }
+}
+@media screen and (max-width:600px){
+  /* for phone */
+  .checkers{
+    flex-wrap:wrap;
+  }
+  .box{
+    width:66.6px;
+  }
+  .disclaimer{
+    background:rgb(144, 79, 104);
+  }
+}
+.mobile-box{
+  background:rgb(255, 180, 201);
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:rgb(57, 0, 38);
+  border-radius:10px;
+  padding:5px;
+}
+.desktop-box{
+  display:none;
+}

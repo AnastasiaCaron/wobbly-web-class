@@ -1,0 +1,85 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  background: rgb(128, 116, 116);
+  margin:0;
+  padding:0;
+}
+p{
+  padding-left:20px;
+}
+.center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  align-content: center;
+}
+img{
+  height:100vh;
+  bottom:0;
+  left:0;
+  position:absolute;
+}
+.count4{
+  opacity:1;
+  transition: .5s cubic-bezier(0.7, 0.33, 0, 1.35);
+}
+.count3{
+  opacity:0;
+  transition: .4s cubic-bezier(0.7, 0.33, 0, 1.35);
+}
+.count2{
+  opacity:0;
+  transition: .3s cubic-bezier(0.7, 0.33, 0, 1.35);
+}
+.count1{
+  opacity:0;
+  transition: .2s cubic-bezier(0, 0.79, 0.4, 1.74);
+}
+.count0{
+  opacity:0;
+  transition: .2s cubic-bezier(0, 0.79, 0.4, 1.74);
+}
+@media screen and (max-width:1200px){
+  /* omg, when resize to 900px, changes properties in here!!! */
+  /* also called a media quary --sets up a "break point" */
+  .count4{
+    opacity:0;
+  }
+  .count3{
+    opacity:1;
+  }
+}
+@media screen and (max-width:1000px){
+  /* omg, when resize to 900px, changes properties in here!!! */
+  /* also called a media quary --sets up a "break point" */
+  .count3{
+    opacity:0;
+  }
+  .count2{
+    opacity:1;
+  }
+}
+@media screen and (max-width:800px){
+  /* omg, when resize to 900px, changes properties in here!!! */
+  /* also called a media quary --sets up a "break point" */
+  .count2{
+    opacity:0;
+  }
+  .count1{
+    opacity:1;
+  }
+}
+@media screen and (max-width:500px){
+  /* omg, when resize to 900px, changes properties in here!!! */
+  /* also called a media quary --sets up a "break point" */
+  .count1{
+    opacity:0;
+  }
+  .count0{
+    opacity:1;
+  }
+}
