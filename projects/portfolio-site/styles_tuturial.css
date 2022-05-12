@@ -1,0 +1,40 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+body{
+  background:rgb(218, 180, 180);
+  color:rgb(84, 3, 3);
+}
+ul{
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+li{
+  background:rgb(60, 0, 0);
+  color:rgb(231, 84, 84);
+  border-radius: 50%;
+}
+.nav_list{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.nav_bar{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius:30%;
+  border-color:rgb(84, 3, 3);
+  border-style: dashed;
+}
+.logo{
+  width:10%;
+
+}

@@ -1,0 +1,149 @@
+*{
+  /* applies to ever element on page, don't add too much - causes problems */
+  box-sizing:border-box;
+  /* this makes your padding and border part of the hight and width of the content in the box model, so it's easier calculate when you want to know exactly how big your elements are */
+}
+.web_title{
+  height:30vh;
+  top:0;
+}
+img{
+  width:100%;
+}
+.logo{
+  max-height:100%;
+}
+body{
+  background:rgb(232, 205, 205);
+  color:rgb(84, 3, 3);
+  font-size:18px;
+  font-family:"Calisto MT", "Candra";
+}
+.page_container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+ul{
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+li{
+  background:hiden;
+  border-color:rgb(181, 26, 26);
+  border-style:hidden;
+  color:black;
+  border-radius: 50%;
+  text-decoration: none;
+  padding:10px;
+}
+a{
+  text-decoration:none;
+  color:rgb(93, 0, 0);
+  padding:10px;
+  border-color:rgb(181, 26, 26);
+  border-radius: 40%;
+  border-style:hidden;
+  border-width:2px;
+}
+a:hover{
+  color:rgb(181, 26, 26);
+  /* border-style:dashed; */
+}
+.nav_list{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.nav_bar{
+  top:27vh;
+  left:46vw;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.illustration_portfolio{
+  padding-top:5vh;
+  width:80vw;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  gap:2vw;
+}
+.img1{
+  width:38vw;
+}
+.img2{
+  width:38vw;
+  position:relative;
+  top:-5vw;
+}
+.img3{
+  width:38vw;
+  position:relative;
+  top:-25vw;
+}
+.bio_organizer{
+  width:80vw;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap:5vw;
+  padding:0;
+  margin:0;
+}
+.bio_text{
+  max-width:40vw;
+  display:flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: stretch;
+  margin:0;
+  padding:0;
+}
+p{
+  font-size:16px;
+  font-family:"Calisto MT", "Candra";
+}
+h1{
+  padding-top:5vh;
+  color:rgb(139,3,0);
+  padding-bottom:0;
+  margin:0;
+}
+.profile-pic{
+  max-width:15vw;
+  border-radius:50%;
+}
+.contact-pic{
+  max-width:20vw;
+  border-radius:20%;
+}
+.video{
+  position:relative;
+  top:-23vw;
+  max-width:80vw;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap:2vw;
+}
+video{
+  max-width:60vw;
+}
